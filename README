@@ -1,0 +1,30 @@
+Assignment problem for milo "Discount Offers" challenge.\
+
+Challenge Description
+
+Our marketing department has just negotiated a deal with several local merchants that will allow us to offer exclusive discounts on various products to our top customers every day. The catch is that we can only offer each product to one customer and we may only offer one product to each customer.
+
+Each day we will get the list of products that are eligible for these special discounts. We then have to decide which products to offer to which of our customers. Fortunately, our team of highly skilled statisticians has developed an amazing mathematical model for determining how likely a given customer is to buy a given product by calculating what we call the "suitability score" (SS). The top-secret algorithm to calculate the SS between a customer and a product is this:
+1. If the number of letters in the product's name is even then the SS is the number of vowels (a, e, i, o, u, y) in the customer's name multiplied by 1.5.
+2. If the number of letters in the product's name is odd then the SS is the number of consonants in the customer's name.
+3. If the number of letters in the product's name shares any common factors (besides 1) with the number of letters in the customer's name then the SS is multiplied by 1.5.
+
+Your task is to implement a program that assigns each customer a product to be offered in a way that maximizes the combined total SS across all of the chosen offers. Note that there may be a different number of products and customers.
+
+You may include code from external libraries as long as you cite the source.
+
+Input:
+
+Your program should run on the command line and take as input two newline separated files, the first containing the names of the products and the second containing the names of the customers
+
+Jeffery Lebowski
+Walter Sobchak
+
+Half & Half
+Colt M1911A1
+
+Output:
+
+For each line of input, print out the maximum total score to two decimal places eg.
+
+19.50
